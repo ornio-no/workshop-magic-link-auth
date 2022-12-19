@@ -1,0 +1,17 @@
+{
+    "env": {
+        "es2020": true,
+        "node": true
+    },
+    "extends": "standard-with-typescript",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module",
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./"
+    },
+    "rules": {
+    }
+}
