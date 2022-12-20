@@ -9,9 +9,11 @@
     "parserOptions": {
         "ecmaVersion": 11,
         "sourceType": "module",
-        "project": "./tsconfig.json",
-        "tsconfigRootDir": "./"
+        "project": "./tsconfig.json"
     },
     "rules": {
+        "@typescript-eslint/semi": ["error", "always"],
+        "@typescript-eslint/quotes": ["error", "single"],
+        "@typescript-eslint/indent": ["error", 4]
     }
 }
