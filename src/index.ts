@@ -1,3 +1,4 @@
+import './initializers';
 import { app } from './app';
 
 const port = 6001;
