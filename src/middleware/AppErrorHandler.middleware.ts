@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
+import { Request, RequestHandler, Response } from 'express';
 
-export const appErrorHandlerMiddleware = (req: Request, res: Response): void => {
+export const appErrorHandlerMiddleware = (async (req: Request, res: Response) => {
     res.status(404).send({ error: 'Not found!' });
-};
+}) as RequestHandler;

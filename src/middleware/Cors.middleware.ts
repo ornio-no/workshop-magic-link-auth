@@ -1,6 +1,6 @@
-import { NextFunction, Request, Response } from 'express';
+import { NextFunction, Request, RequestHandler, Response } from 'express';
 
-export const CorsMiddleware = (req: Request, res: Response, next: NextFunction): void => {
+export const CorsMiddleware = (async (req: Request, res: Response, next: NextFunction) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', '*');
 
@@ -10,4 +10,4 @@ export const CorsMiddleware = (req: Request, res: Response, next: NextFunction):
     }
 
     next();
-};
+}) as RequestHandler;
